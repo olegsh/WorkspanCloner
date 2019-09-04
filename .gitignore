@@ -1,0 +1,20 @@
+
+# IDE files
+.vscode
+# Ignore idea files
+.idea
+# Mac related
+.DS_Store
+
+# Ignore junk files
+*.bak
+# Ignore local git config
+.gitconfig
+# Ignore any gradle configs
+.gradle
+
+# Ignore output file
+./output.json
+# ignore build dir
+target
+WorkSpan Homework Question v2
