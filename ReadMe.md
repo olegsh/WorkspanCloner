@@ -9,6 +9,19 @@ Process is cloning all the entities that are related to that node
 The output of the process is also a JSON file with new relationship
 graph connected to initial input graph.
 
+### Details:
+- Finds the entity with the entityid given as a 
+    parameter on the command line.
+- Creates a clone (copy) of the initial entity and assign it a 
+    new random id (note, no collusion with already created nodes).
+- Clones all the related entities by traversing the links from the initial entity.
+  This process continues till all the related entities and links have been cloned. 
+- For the initial entity, any entities that link to it are now also link to the clone of the initial entity.         
+- All the new entities and links are added back to the list of entities and links.
+- When the cloning is completed, the program outputs the entities and links
+  to standard output as valid JSON in the same format as the input file (see ./output.json)
+          
+ ### Structure          
 - Entity Node representation
 ```
 ID
@@ -141,4 +154,13 @@ starting point as Node ID = 5
 		"to": 19
 	}]
 }
+```
+
+### Logging:
+Logging is done in standard way via Log4j2 and configured to the
+console and file (./qv2.log)
+
+### Output Json file is:
+```text
+./output.json
 ```
