@@ -33,7 +33,7 @@ public class LoaderHelper {
   private UtilsHelper utilsService;
 
   public Graph buildGraph(String filepath) throws Exception {
-    logger.info("heelo world");
+    logger.debug("heelo world");
     Field field = mapper.readValue(new File(filepath), Field.class);
     if (field == null || CollectionUtils.isEmpty(field.getEntities()) ||
         CollectionUtils.isEmpty(field.getLinks())) {
