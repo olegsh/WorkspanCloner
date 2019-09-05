@@ -18,3 +18,5 @@ output.json
 # ignore build dir
 target
 WorkSpan Homework Question v2
+# ignoring logs
+*.log
