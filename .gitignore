@@ -12,9 +12,9 @@
 .gitconfig
 # Ignore any gradle configs
 .gradle
-
+*.iml
 # Ignore output file
-./output.json
+output.json
 # ignore build dir
 target
 WorkSpan Homework Question v2
