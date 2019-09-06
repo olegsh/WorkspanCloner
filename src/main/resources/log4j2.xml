@@ -14,7 +14,8 @@
       <AppenderRef ref="FileApp" level="trace"/>
     </Root>
     <Logger name="org.apache" level="warn" additivity="false">
-      <Appender-ref ref="RollingFile" level="warn" />
+      <Appender-ref ref="FileApp" level="warn" />
+      <AppenderRef ref="Console" level="warn" />
     </Logger>
     <Logger name="com.workspan" level="debug" additivity="false">
       <Appender-ref ref="FileApp" level="debug" />
